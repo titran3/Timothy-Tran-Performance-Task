@@ -4,14 +4,17 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b3plr"]
 radius = 142.0
-height = 400.0
+height = 388.0
 
 [node name="Enemy" type="RigidBody2D"]
 gravity_scale = 2.66454e-15
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_sdnhd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(16, -4)
+position = Vector2(6, 4.76837e-07)
+rotation = -0.31765
+scale = Vector2(0.4, 0.4)
 shape = SubResource("CapsuleShape2D_b3plr")
